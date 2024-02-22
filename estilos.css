@@ -1,0 +1,309 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4B06C1, #7405C0, #A404BE);
+}
+
+.navbar {
+    background-color: #9B41E2;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 80px); /* Resta la altura de la barra de navegación */
+    width: 100%;
+    margin: 30px;
+}
+
+.left-section {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.right-section-text {
+    margin-top: 350px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-section {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 0;
+    
+}
+
+.button {
+    padding: 20px 160px;
+    background-color: #B69DF8;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px #7548C6;
+}
+
+.google-button {
+    background-color: #4285f4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.illustration:first-child {
+    z-index: 1;
+}
+
+
+/* Estilos para la segunda sección */
+.second-section {
+    display: flex;
+    height: calc(100% - 80px); /* Resta la altura de la barra de navegación */
+    width: 100%;
+    background: linear-gradient(to right, #A404BE, #7405C0, #4B06C1);
+}
+
+.left-subsection {
+    width: 30%;
+    
+}
+
+.left-subsection img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.left-section-second {
+    margin: 100px;
+    
+    
+}
+
+.right-section-second {
+    width: 70%;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de vidrio */
+
+    
+}
+/* Estilos para la tercera sección */
+.third-section {
+    display: flex;
+    height: calc(100% - 80px); /* Resta la altura de la barra de navegación */
+    width: 100%;
+}
+
+.subsection_1, .subsection_2, .subsection_3 {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 50px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de vidrio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+}
+
+/* Efecto de hover para las tarjetas */
+.subsection_1:hover, .subsection_2:hover, .subsection_3:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba al pasar el ratón */
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+
+ /* Estilos tercera sección */
+ .third-section {
+    display: flex;
+    height: calc(100% - 80px); /* Resta la altura de la barra de navegación */
+    width: 100%;
+}
+
+.left-subsection {
+    width: 50%;
+    
+}
+.left-subsection img {
+    transition: transform 0.3s ease; /* Transición suave en la propiedad transform */
+}
+
+.left-subsection img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% al pasar el cursor sobre ella */
+}
+
+.left-subsection img {
+    width: 50%; /* Cambiado al 50% para reducir a la mitad del tamaño */
+    height: auto;
+    margin: 100px;
+
+}
+
+.right-subsection {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.sub-section {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.button {
+    padding: 20px 80px;
+    background-color: #B69DF8;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px #7548C6;
+}
+
+.google-button {
+    background-color: #4285f4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+
